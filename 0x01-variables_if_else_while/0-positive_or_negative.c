@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Positive anything is better than negative nothing
+ *
+ * Return: 0 for success
+ *
+ */
 int main(void)
 {
 	int n;
