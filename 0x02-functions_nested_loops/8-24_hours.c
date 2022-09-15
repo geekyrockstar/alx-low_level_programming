@@ -3,6 +3,7 @@
 /**
  * jack_bauer - prints all minute of the day
  * @void: nothing
+ * Return: nothing
  *
  **/
 
