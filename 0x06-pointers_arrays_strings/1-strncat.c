@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strncat - concatenates specified values from src to dest
@@ -10,21 +11,14 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int i;
+	int dest_len = strlen(dest);
 
-	i = 0;
-
-	while (dest[i] != '\0')
-		i++;
-
-	for (j = 0; j < n; j++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest[i] = src[j];
-		i++;
+		dest[dest_len + i] = src[i];
 	}
-
-	if (dest[i - 1] != '\0')
-		dest[i] = '\0';
+	dest[dest_len + i] = '\0';
 
 	return (dest);
 }
